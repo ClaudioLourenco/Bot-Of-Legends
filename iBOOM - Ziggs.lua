@@ -15,13 +15,8 @@ DownloadFile(SOURCELIB_URL, SOURCELIB_PATH, function() PrintChat("Required libra
 end
 if DOWNLOADING_SOURCELIB then PrintChat("Downloading required libraries, please wait...") return end
 if AUTOUPDATE then
-SourceUpdater(SCRIPT_NAME, version, "raw.github.com", "/princer007/BoL/master/"..SCRIPT_NAME..".lua", SCRIPT_PATH .. GetCurrentEnv().FILE_NAME, "/princer007/BoL/master/"..SCRIPT_NAME..".version"):CheckUpdate()
+SourceUpdater(SCRIPT_NAME, version, "raw.github.com", "/iAMShawn/Bot Of Legends/master/"..SCRIPT_NAME..".lua", SCRIPT_PATH .. GetCurrentEnv().FILE_NAME, "/iAMShawn/Bot Of Legends/master/"..SCRIPT_NAME..".version"):CheckUpdate()
 end
-local RequireI = Require("SourceLib")
-RequireI:Add("vPrediction", "https://raw.github.com/Hellsing/BoL/master/common/VPrediction.lua")
-RequireI:Add("SOW", "https://raw.github.com/Hellsing/BoL/master/common/SOW.lua")
-RequireI:Check()
-if RequireI.downloadNeeded == true then return end
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
