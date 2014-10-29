@@ -17,11 +17,6 @@ if DOWNLOADING_SOURCELIB then PrintChat("Downloading required libraries, please 
 if AUTOUPDATE then
 SourceUpdater(SCRIPT_NAME, version, "raw.github.com", "/iAMShawn/Bot Of Legends/master/"..SCRIPT_NAME..".lua", SCRIPT_PATH .. GetCurrentEnv().FILE_NAME, "/iAMShawn/Bot Of Legends/master/"..SCRIPT_NAME..".version"):CheckUpdate()
 end
-local RequireI = Require("SourceLib")
-RequireI:Add("vPrediction", "https://github.com/iAMShawn/common/blob/common/VPrediction.lua")
-RequireI:Add("SOW", "https://github.com/iAMShawn/common/blob/common/SOW.lua")
-RequireI:Check()
-if RequireI.downloadNeeded == true then return end
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
